@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Profile</h1>
+  </header>
+  <main id="profile-section">
+    <img id="profile-pic" alt="Profile Picture">
+    <h2 id="profile-name">Name</h2>
+    <p id="profile-bio">Bio</p>
+  </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const profile = JSON.parse(localStorage.getItem('profileToView'));
+      document.getElementById('profile-pic').src = profile.pic;
+      document.getElementById('profile-name').textContent = profile.name;
+      document.getElementById('profile-bio').textContent = profile.bio;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Create Your Profile</h1>
+  </header>
+  <main>
+    <section id="profile-creation-section">
+      <h2>Tell Us About Yourself</h2>
+      <form id="profile-form">
+        <label for="user-name">Name:</label>
+        <input type="text" id="user-name" placeholder="Enter your name" required>
+        <label for="user-bio">Bio:</label>
+        <textarea id="user-bio" placeholder="Tell us about yourself" required></textarea>
+        <label for="user-pic">Profile Picture:</label>
+        <input type="file" id="user-pic" accept="image/*">
+        <button type="submit">Save and Start Swiping</button>
+      </form>
+    </section>
+  </main>
+  <script src="profile.js"></script>
+</body>
+</html>
